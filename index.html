@@ -1,208 +1,339 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brave Binary Bridger | Data & SQL Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/styles.css">
-</head>
-<body class="antialiased">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body class="antialiased">
     <!-- Navigation Bar -->
-    <nav class="bg-white shadow-md py-4 px-6 fixed w-full z-10 top-0 rounded-b-lg">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition duration-300">BraveBinaryBridger</a>
-            <div class="space-x-6">
-                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">About</a>
-                <a href="#skills" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Skills</a>
-                <a href="#projects" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Projects</a>
-            <!--
+    <nav
+      class="bg-white shadow-md py-4 px-6 fixed w-full z-10 top-0 rounded-b-lg"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <a
+          href="#"
+          class="text-2xl font-bold text-blue-600 hover:text-blue-800 transition duration-300"
+          >BraveBinaryBridger</a
+        >
+        <div class="space-x-6">
+          <a
+            href="#about"
+            class="text-gray-700 hover:text-blue-600 font-medium transition duration-300"
+            >About</a
+          >
+          <a
+            href="#skills"
+            class="text-gray-700 hover:text-blue-600 font-medium transition duration-300"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="text-gray-700 hover:text-blue-600 font-medium transition duration-300"
+            >Projects</a
+          >
+          <!--
                 <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Contact</a>
             -->
-            </div>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-     
-    <header class="bg-gradient-to-r from-sky-400 to-orange-400  text-white py-32 text-center rounded-b-xl shadow-lg mt-16">
-        <div class="container mx-auto px-6">
-            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fade-in-down">
-                Hello, I'm <span class="text-yellow-300">Brave Binary Bridger</span>
-            </h1>
-            <p class="text-2xl md:text-3xl font-light mb-8 animate-fade-in-up">
-                Data & SQL Developer | ETL Specialist | BI Enthusiast
-            </p>
-            <a href="#projects" class="bg-white text-blue-700 hover:bg-blue-100 px-8 py-4 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105 animate-bounce-in">
-                View My Work
-            </a>
-        </div>
+
+    <header
+      class="bg-gradient-to-r from-sky-400 to-orange-400 text-white py-32 text-center rounded-b-xl shadow-lg mt-16"
+    >
+      <div class="container mx-auto px-6">
+        <h1
+          class="text-5xl md:text-6xl font-extrabold mb-4 animate-fade-in-down"
+        >
+          Hello, I'm <span class="text-yellow-300">Brave Binary Bridger</span>
+        </h1>
+        <p class="text-2xl md:text-3xl font-light mb-8 animate-fade-in-up">
+          Data & SQL Developer | ETL Specialist | BI Enthusiast
+        </p>
+        <a
+          href="#projects"
+          class="bg-white text-blue-700 hover:bg-blue-100 px-8 py-4 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105 animate-bounce-in"
+        >
+          View My Work
+        </a>
+      </div>
     </header>
 
-      
-
     <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-white shadow-md rounded-lg mx-auto my-8 max-w-4xl px-6">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-gray-800 mb-8 section-heading">My Dashboards</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-                <!-- Project Card 1:  -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-lg border border-blue-200 transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Insolvency BI Dashboard</h3>
-                    <p class="text-gray-700 mb-4">
-                        This dashboard was created to analyze and monitor key performance indicators for a debt solutions company.
-                    </p>
-                <div class="flex justify-center items-center">
-                  <a href="https://raw.githubusercontent.com/BraveBinaryBridger/UK-Insolvency-BI-Dashboard/refs/heads/main/docs/all.jpg" target="_blank">
-                    <img src="https://raw.githubusercontent.com/BraveBinaryBridger/UK-Insolvency-BI-Dashboard/refs/heads/main/docs/all.jpg" 
-                    alt="A screenshot of a business intelligence dashboard" 
-                   class="w-full h-auto rounded-md shadow-lg"
-                    onerror="this.onerror=null;this.src='https://placehold.co/1000x800/1e293b/cbd5e1?text=Image+Loading+Error';">
-                </a>
-                </div>
-
-                    <ul class="list-disc list-inside text-gray-600 my-4">
-                        <li>**Technologies:** MSSQL (Data Warehouse, T-SQL, SSIS),JSON, Power BI.</li>
-                        <li>**Key Features:** ETL pipelines, Star Schema data model, interactive dashboards for client demographics, debt types, and insolvency solutions.</li>
-                    </ul>
-                    <div class="flex justify-center mt-6">
-                        <a href="https://github.com/BraveBinaryBridger/UK-Insolvency-BI-Dashboard
-                        " target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 shadow-md">
-                            View on GitHub
-                        </a>
-                 <!--       <a href="https://app.powerbi.com/view?r=..." target="_blank" class="bg-green-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-green-700 transition duration-300 shadow-md">
-                            Live Demo (Power BI)
-                        </a>
-                    --> 
-                    </div>
-                </div>
-                
-                <!-- Project Card 2 -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-lg border border-blue-200 transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-semibold text-blue-700 mb-3">Public Transport Performance & Accessibility Dashboard</h3>
-                    <p class="text-gray-700 mb-4">
-                        An end-to-end data project demonstrating skills in data sourcing, ETL, data warehousing, and interactive visualization. This project analyzes public transport (e.g., bus/train) performance, reliability, and accessibility in a specific urban area.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-600 mb-4">
-                        <li>**Technologies:** MSSQL (Data Warehouse, T-SQL, SSIS), Power BI, Python (for data processing/APIs).</li>
-                        <li>**Key Features:** ETL pipelines, Star Schema data model, interactive dashboards for delays, on-time performance, and accessibility insights.</li>
-                    </ul>
-
-                    <div class="flex justify-center mt-6">
-                        <a href="https://github.com/BraveBinaryBridger/Glasgow-Bus-BI-Analytics" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 shadow-md">
-                            At work
-                        </a>
-                <!--       <a href="https://app.powerbi.com/view?r=..." target="_blank" class="bg-green-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-green-700 transition duration-300 shadow-md">
-                            Live Demo (Power BI)
-                        </a>
-                --> 
-                    </div>
-                </div>
-
-                
-
+    <section
+      id="projects"
+      class="py-16 bg-white shadow-md rounded-lg mx-auto my-8 max-w-4xl px-6"
+    >
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-gray-800 mb-8 section-heading">
+          My Dashboards
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Project Card 1:  -->
+          <div
+            class="bg-gray-50 p-6 rounded-xl shadow-lg border border-blue-200 transform hover:scale-105 transition duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-blue-700 mb-3">
+              Insolvency BI Dashboard
+            </h3>
+            <p class="text-gray-700 mb-4">
+              This dashboard was created to analyze and monitor key performance
+              indicators for a debt solutions company.
+            </p>
+            <div class="flex justify-center items-center">
+              <a
+                href="https://raw.githubusercontent.com/BraveBinaryBridger/UK-Insolvency-BI-Dashboard/21af4afa5ac8daf133cf4fef42c33799b87f43a9/docs/all.jpg"
+                target="_blank"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/BraveBinaryBridger/UK-Insolvency-BI-Dashboard/21af4afa5ac8daf133cf4fef42c33799b87f43a9/docs/all.jpg"
+                  alt="A screenshot of a business intelligence dashboard"
+                  class="w-full h-auto rounded-md shadow-lg"
+                  onerror="
+                    this.onerror = null;
+                    this.src =
+                      'https://placehold.co/1000x800/1e293b/cbd5e1?text=Image+Loading+Error';
+                  "
+                />
+              </a>
             </div>
+
+            <ul class="list-disc list-inside text-gray-600 my-4">
+              <li>
+                <strong>Technologies:</strong> MSSQL (Data Warehouse, T-SQL,
+                SSIS),JSON, Power BI.
+              </li>
+              <li>
+                <strong>Key Features:</strong> ETL pipelines, Star Schema data
+                model, interactive dashboards for client demographics, debt
+                types, and insolvency solutions.
+              </li>
+            </ul>
+            <div class="flex justify-center mt-6">
+              <a
+                href="https://github.com/BraveBinaryBridger/UK-Insolvency-BI-Dashboard
+                        "
+                target="_blank"
+                class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 shadow-md"
+              >
+                View on GitHub
+              </a>
+              <!--       <a href="https://app.powerbi.com/view?r=..." target="_blank" class="bg-green-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-green-700 transition duration-300 shadow-md">
+                            Live Demo (Power BI)
+                        </a>
+                    -->
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div
+            class="bg-gray-50 p-6 rounded-xl shadow-lg border border-blue-200 transform hover:scale-105 transition duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-blue-700 mb-3">
+              Refugee Integration & Demographics Dashboard
+            </h3>
+            <p class="text-gray-700 mb-4">
+              An end-to-end CRM and data analytics project built for case
+              monitoring and demographic tracking. It streamlines client
+              tracking, automates key casework milestones, and provides
+              actionable regional insights across Glasgow districts.
+            </p>
+
+            <img
+              src="https://github.com/BraveBinaryBridger/salesforce-bi-analytics/blob/main/doc/demographics.png?raw=true"
+              alt="A screenshot of a business intelligence dashboard"
+              class="w-full h-auto rounded-md shadow-lg"
+              onerror="
+                this.onerror = null;
+                this.src =
+                  'https://placehold.co/1000x800/1e293b/cbd5e1?text=Image+Loading+Error';
+              "
+            />
+
+            <ul class="list-disc list-inside text-gray-600 mb-4">
+              <li>
+                <strong>Technologies:</strong> Salesforce CRM (Custom Objects,
+                Flow Builder), Power BI Desktop, DAX, Power Query.
+              </li>
+              <li>
+                <strong>Key Features:</strong> Direct Salesforce-to-Power BI ETL
+                integration, automated task triggering for BRP applications,
+                DAX-driven geographic grouping for Glasgow outcodes (G1, G3,
+                G51), and interactive legal status overview.
+              </li>
+            </ul>
+
+            <div class="flex justify-center space-x-4 mt-6">
+              <a
+                href="https://github.com/BraveBinaryBridger/salesforce-bi-analytics.git"
+                target="_blank"
+                class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 shadow-md"
+              >
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div
+            class="bg-gray-50 p-6 rounded-xl shadow-lg border border-blue-200 transform hover:scale-105 transition duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-blue-700 mb-3">
+              Public Transport Performance & Accessibility Dashboard
+            </h3>
+            <p class="text-gray-700 mb-4">
+              An end-to-end data project demonstrating skills in data sourcing,
+              ETL, data warehousing, and interactive visualization. This project
+              analyzes public transport (e.g., bus/train) performance,
+              reliability, and accessibility in a specific urban area.
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-4">
+              <li>
+                <strong>Technologies:</strong> MSSQL (Data Warehouse, T-SQL,
+                SSIS), Power BI, Python (for data processing/APIs).
+              </li>
+              <li>
+                <strong>Key Features:</strong> ETL pipelines, Star Schema data
+                model, interactive dashboards for delays, on-time performance,
+                and accessibility insights.
+              </li>
+            </ul>
+
+            <div class="flex justify-center mt-6">
+              <a
+                href="https://github.com/BraveBinaryBridger/Glasgow-Bus-BI-Analytics"
+                target="_blank"
+                class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300 shadow-md"
+              >
+                At work
+              </a>
+              <!--       <a href="https://app.powerbi.com/view?r=..." target="_blank" class="bg-green-600 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-green-700 transition duration-300 shadow-md">
+                            Live Demo (Power BI)
+                        </a>
+                -->
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-<!-- About Section -->
-    <section id="about" class="py-16 bg-white shadow-md rounded-lg mx-auto my-8 max-w-4xl px-6">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-gray-800 mb-8 section-heading">About Me</h2>
-            <p class="text-lg leading-relaxed mb-4">
-                Highly motivated Database Developer with over 10 years of experience in database management, ETL, and reporting using Microsoft SQL Server. 
-                I am skilled in translating complex business needs into effective data solutions, 
-                with a strong focus on data integrity, performance optimization, and delivering actionable insights.
-            </p>
-            <p class="text-lg leading-relaxed">
-                My career has been built on a foundation of T-SQL, SSIS, and SSRS, complemented by a passion for continuous learning and adapting to new technologies
-                 like Python, Power BI, and modern web development. I thrive in data-centric environments where
-                  I can leverage my analytical thinking and problem-solving abilities to contribute to data-driven success.
-            </p>
-        </div>
+    <!-- About Section -->
+    <section
+      id="about"
+      class="py-16 bg-white shadow-md rounded-lg mx-auto my-8 max-w-4xl px-6"
+    >
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-gray-800 mb-8 section-heading">
+          About Me
+        </h2>
+        <p class="text-lg leading-relaxed mb-4">
+          Highly motivated Database Developer with over 10 years of experience
+          in database management, ETL, and reporting using Microsoft SQL Server.
+          I am skilled in translating complex business needs into effective data
+          solutions, with a strong focus on data integrity, performance
+          optimization, and delivering actionable insights.
+        </p>
+        <p class="text-lg leading-relaxed">
+          My career has been built on a foundation of T-SQL, SSIS, and SSRS,
+          complemented by a passion for continuous learning and adapting to new
+          technologies like Python, Power BI, and modern web development. I
+          thrive in data-centric environments where I can leverage my analytical
+          thinking and problem-solving abilities to contribute to data-driven
+          success.
+        </p>
+      </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-gray-50 shadow-md rounded-lg mx-auto my-8 max-w-4xl px-6">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-gray-800 mb-8 section-heading">Key Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Skill Category 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Database Technologies</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
-                        <li>MSSQL (T-SQL, ETL, SSRS, Performance Tuning, Stored Procedures, Backup & Recovery)</li>
-                        <li>MySQL</li>
-                        <li>Data Warehousing Approaches (Kimball, Star Schema principles)</li>
-                    </ul>
-                </div>
-                <!-- Skill Category 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Reporting & Analytics</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
-                        <li>Power BI</li>
-                        <li>Crystal Reports, Fast Report</li>
-                        <li>Data Visualization</li>
-                        <li>Business Intelligence</li>
-                    </ul>
-                </div>
-                <!-- Skill Category 3 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Programming & Tools</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
-                        <li>Python, Delphi, JavaScript, HTML, CSS</li>
-                        <li>SSMS, Visual Studio, VS Code, Git</li>
-                        <li>Microsoft Office Suite, Windows OS</li>
-                    </ul>
-                </div>
-                <!-- Skill Category 4 -->
-                <div class="skills bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Soft Skills</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
-                        <li>Analytical Thinking</li>
-                        <li>Problem Solving</li>
-                        <li>Excellent Communication</li>
-                        <li>Teamwork</li>
-                        <li>Customer-Focused Approach</li>
-                        <li>Adaptability & Continuous Learning</li>
-                    </ul>
-                </div>
-            </div>
+    <section
+      id="skills"
+      class="py-16 bg-gray-50 shadow-md rounded-lg mx-auto my-8 max-w-4xl px-6"
+    >
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-gray-800 mb-8 section-heading">
+          Key Skills
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Skill Category 1 -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-blue-700 mb-4">
+              Database Technologies
+            </h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              <li>
+                MSSQL (T-SQL, ETL, SSRS, Performance Tuning, Stored Procedures,
+                Backup & Recovery)
+              </li>
+              <li>MySQL</li>
+              <li>
+                Data Warehousing Approaches (Kimball, Star Schema principles)
+              </li>
+            </ul>
+          </div>
+          <!-- Skill Category 2 -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-blue-700 mb-4">
+              Reporting & Analytics
+            </h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              <li>Power BI</li>
+              <li>Crystal Reports, Fast Report</li>
+              <li>Data Visualization</li>
+              <li>Business Intelligence</li>
+            </ul>
+          </div>
+          <!-- Skill Category 3 -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-blue-700 mb-4">
+              Programming & Tools
+            </h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              <li>Python, Delphi, JavaScript, HTML, CSS</li>
+              <li>SSMS, Visual Studio, VS Code, Git</li>
+              <li>Microsoft Office Suite, Windows OS</li>
+            </ul>
+          </div>
+          <!-- Skill Category 4 -->
+          <div
+            class="skills bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-blue-700 mb-4">
+              Soft Skills
+            </h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              <li>Analytical Thinking</li>
+              <li>Problem Solving</li>
+              <li>Excellent Communication</li>
+              <li>Teamwork</li>
+              <li>Customer-Focused Approach</li>
+              <li>Adaptability & Continuous Learning</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Contact Section -->
-     <!--
-    <section id="contact" class="py-16 bg-gray-50 shadow-md rounded-lg mx-auto my-8 max-w-4xl px-6">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-gray-800 mb-8 section-heading mx-auto">Get In Touch</h2>
-            <p class="text-lg leading-relaxed mb-8">
-                I'm always open to discussing new projects, collaborations, or opportunities. Feel free to reach out!
-            </p>
-         !--   <div class="flex flex-col items-center space-y-4">
-                <a href="mailto:h.loban@protonmail.com" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
-                    Email Me
-                </a>
-                <a href="https://www.linkedin.com/in/hloban" target="_blank" class="text-blue-600 hover:text-blue-800 text-lg font-medium transition duration-300">
-                    Connect on LinkedIn
-                </a>
-                <a href="https://github.com/BraveBinaryBridger" target="_blank" class="text-blue-600 hover:text-blue-800 text-lg font-medium transition duration-300">
-                    View My GitHub
-                </a>
-            </div>
-        </div>
-    </section>
-    -->
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8 text-center rounded-t-lg">
-        <div class="container mx-auto px-6">
-            <p>&copy; 2025 Brave Binary Bridger. All rights reserved.</p>
-        </div>
+      <div class="container mx-auto px-6">
+        <p>&copy; 2025 Brave Binary Bridger. All rights reserved.</p>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
